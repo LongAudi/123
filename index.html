@@ -100,6 +100,7 @@ or the following one for loading the Bootstrap library from jsDelivr:
 				<path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
 				<path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
 			  </svg>
+			  <span class="title">Tải xuống để xem dự án</span>
 		</a>
 	</div>
 </div><!-- end Simple Custom CSS and JS -->
@@ -624,6 +625,34 @@ a.zalo {
     z-index: 2;
     position: relative;
 }
+
+.stick-button a svg {
+    max-height: 30px;
+    z-index: 2;
+    position: relative;
+}
+
+.stick-button .download span.title {
+    transform: translateX(10px);
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    height: calc(100%);
+    top: 0;
+    right: 40px;
+    white-space: nowrap;
+    padding: 6px 56px 4px 20px;
+    background: #ab6c32;
+    border-radius: 26px 0 0 26px;
+    font-size: 18px;
+    font-weight: 600;
+    pointer-events: none;
+    display: inline-flex;
+    align-items: center;
+}
+
 .stick-button a span.title {
     padding: 6px 40px 4px 20px;
 }
